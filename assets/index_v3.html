@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
 <head>
-  <title>oscau's proxy</title>
+  <title>Page Sandbox</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-  <base target="_self">
+  <base target="_blank">
   <style>
     body {
       padding: 0 0.5em;
@@ -59,8 +59,8 @@
     btnGo.onclick = function() {
       const text = txtURL.value.trim()
       if (text) {
-        const url = './' + text
-        open(url, '_self', 'noopener,noreferrer')
+        const url = './-----' + text
+        open(url, '_blank', 'noopener,noreferrer')
       }
     }
     txtURL.onkeypress = function(e) {
