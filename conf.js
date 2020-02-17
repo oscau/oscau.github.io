@@ -20,22 +20,10 @@ jsproxy_config({
         'node-aliyun-hk-2.etherdream.com:8443': 2,
       }
     },
-    'demo-sg': {
-      label: '演示服务-新加坡节点',
-      lines: {
-        'node-aliyun-sg.etherdream.com:8443': 1,
-      },
-    },
-    'mysite': {
-      label: '当前站点',
-      lines: {
-        [location.host]: 1,
-      }
-    },
     // 该节点用于加载大体积的静态资源
     'cfworker': {
       label: '',
-      hidden: true,
+      hidden: false,
       lines: {
         // 收费版（高权重）
         'node-cfworker-2.etherdream.com': 4,
