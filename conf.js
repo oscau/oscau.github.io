@@ -67,7 +67,7 @@ jsproxy_config({
   /**
    * 自定义注入页面的 HTML
    */
-  inject_html: 'index_custom.html',
+  inject_html: '',
 
   /**
    * URL 自定义处理（设计中）
@@ -80,10 +80,7 @@ jsproxy_config({
       redir: 'https://cn.pornhub.com/'
     },
     'https://www.pornhub.com/': {
-      content: '小伙子，少看点片吧'
-    },
-    'https://cn.pornhub.com/': {
-      content: '小伙子，少看点片吧'
+      content: 'NO PornHub Please!'
     },
   }
 })
