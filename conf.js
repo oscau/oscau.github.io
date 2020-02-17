@@ -76,7 +76,7 @@ jsproxy_config({
     'https://www.baidu.com/img/baidu_resultlogo@2.png': {
       replace: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png'
     },
-    'https://1024': {
+    'https://kanpian.com': {
       redir: 'https://cn.pornhub.com/'
     },
     'https://www.pornhub.com/': {
