@@ -59,7 +59,7 @@ jsproxy_config({
   assets_cdn: 'assets/',
 
   // 首页路径
-  index_path: 'index_v3.html',
+  index_path: 'index_custom.html',
 
   // 支持 CORS 的站点列表（实验中...）
   direct_host_list: 'cors_v1.txt',
@@ -76,11 +76,14 @@ jsproxy_config({
     'https://www.baidu.com/img/baidu_resultlogo@2.png': {
       replace: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png'
     },
-    'https://www.pornhub.com/': {
-      redir: 'https://php.net/'
+    'https://1024': {
+      redir: 'https://cn.pornhub.com/'
     },
-    'http://haha.com/': {
-      content: 'Hello World'
+    'https://www.pornhub.com/': {
+      content: '小伙子，少看点片吧'
+    },
+    'https://cn.pornhub.com/': {
+      content: '小伙子，少看点片吧'
     },
   }
 })
