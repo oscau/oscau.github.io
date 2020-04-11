@@ -29,13 +29,13 @@
 </head>
 <body>
   <div class="box">
-    <input id="txtURL" type="text" value="www.google.com" autofocus>
+    <input id="txtURL" type="text" value="www.google.com.hk" autofocus>
   </div>
   <div class="box">
     <button id="btnGo">Go</button>
   </div>
   <div class="box">
-    <span>切换线路:</span>
+    <span>线路:</span>
     <select id="selNode"></select>
   </div>
   <div class="box" id="list">
@@ -59,7 +59,7 @@
     btnGo.onclick = function() {
       const text = txtURL.value.trim()
       if (text) {
-        const url = './-----' + text
+        const url = './' + text
         open(url, '_blank', 'noopener,noreferrer')
       }
     }
@@ -111,30 +111,6 @@
         return
       }
       ctl.postMessage([cmd, val])
-    }
-
-    const SITE_LIST = [
-      ['google', ''],
-      ['youtube', ''],
-      ['twitter', 'twitter.com/'],
-      ['flickr', ''],
-      ['quora', 'www.quora.com/'],
-      ['twitch', 'www.twitch.tv/'],
-      ['reddit', ''],
-      ['wiki', 'zh.wikipedia.org/'],
-      ['gist', 'www.github.com/'],
-      ['facebook', 'facebook.com/'],
-      ['blogger', ''],
-    ]
-
-    function showIcons() {
-      list.innerHTML = SITE_LIST.map(v => {
-        let [id, url] = v
-        url = url || `www.${id}.com/`
-        return `\
-<a rel="noopener noreferrer" href=./-----https://${url}>\
-<img width=128 height=128 src=__sys__/assets/ico/${id}.png></a>`
-      }).join('')
     }
 
     function addNodeItem(id, text) {
