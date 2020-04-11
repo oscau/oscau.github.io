@@ -12,20 +12,6 @@ jsproxy_config({
 
   // 节点配置
   node_map: {
-    'demo-hk': {
-      label: '香港节点（失效）',
-      lines: {
-        // 主机:权重
-        'node-aliyun-hk-1.etherdream.com:8443': 1,
-        'node-aliyun-hk-2.etherdream.com:8443': 2,
-      }
-    },
-    'demo-sg': {
-      label: '新加坡节点（失效）',
-      lines: {
-        'node-aliyun-sg.etherdream.com:8443': 1,
-      },
-    },
     'mysite': {
       label: '美国节点',
       lines: {
